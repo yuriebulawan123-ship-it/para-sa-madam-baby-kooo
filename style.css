@@ -1,0 +1,9 @@
+ .photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ffb6d0;
+    display: block;
+    margin: 15px auto;
+}

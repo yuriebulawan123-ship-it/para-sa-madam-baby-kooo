@@ -1,0 +1,187 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Baby 💗</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffd6e7;
+    font-family: Georgia, serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #d63384;
+    margin-bottom: 25px;
+}
+
+.envelope {
+    width: 300px;
+    height: 190px;
+    background: #ff8fba;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 8px 20px #d96b9980;
+}
+
+.envelope::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 110px solid #ffb2ce;
+    z-index: 2;
+}
+
+.heart {
+    font-size: 40px;
+    position: absolute;
+    top: 75px;
+    left: 130px;
+    z-index: 3;
+}
+
+.letter {
+    display: none;
+    background: #fff0f5;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 5px 20px #d96b9950;
+    color: #a83265;
+    line-height: 1.7;
+    animation: open 1s ease;
+}
+
+.letter h2 {
+    color: #e75480;
+    margin-bottom: 15px;
+}
+
+.letter p {
+    font-size: 15px;
+    text-align: left;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+button {
+    background: #e75480;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #d63384;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2> 💕for my babyy jah jah my wifey 💗</h2>
+    (sana ma appreciate mo tong gawa kong codee huhu hirap niya daming error) 
+
+    <div class="envelope" id="envelope">
+        <div class="heart">💌</div>
+    </div>
+
+    <button id="openBtn" onclick="openLetter()">
+        Open My Letter 💗
+    </button>
+
+    <div class="letter" id="letter">
+
+        <h2>Hii Jah Baby Ko! 💗</h2>
+       <img src="jah.jpg" class="photo" alt="Our picture">
+        <p>
+        My HONN!! THANKYOUU FOR 1 MONTH!
+        YESS, 1 MONTH JAHH! 🥹💗
+        <br><br>
+
+        Salamatt po sa iyong binigay na alaga,
+        time, at pagmamahal po buti na lang
+        nalagpasan natin ito Im so happy
+        na umabot tayo sa ganito
+        <br><br>
+
+        I hope na mas marami pa tayong
+        months,years and memories na pagsasaluhan pagsasamahan
+        Sana kahit may mga pagsubok
+        piliin pa rin nating intindihin
+        at mahalin ang isat isa at alam kong marami patong magiging problema tampuhan misunderstanding and baby please wag po ikaw ako na matutulog ng may tampuhan po baby ah. babyy ko wag tayong susuko ah okay okay baby ahh!! intidihun patin nating ang isat isa poo kahit anong prob payan lagi natin I fixx po ahh sana wag mo mag bagoo ugali mo sakin po ah sana kahit anong pag subok payan lagi natin ifixx okay kahit lagi tayong nag aaway walang araw tayong hindi nag aaway kasii nga ganyan talaga ang pag mamahal heheh lloveyouuisonuchhh babyy ko mwa mwa mwa and babyg sorry po kung walang gift si yuriee sa monthsary natin hehe alam money si boyfie mo po sumabay yung mga bayarin mwa mwas yan lang po messages ko sayo  for now mwa mwa lloveyouu po talagaa mahal na mahal kitaa palagii okkiee baby mwa♥♥🎀
+        <br><br>
+
+        And thank you for being part of my life babyy ko huhu laking tulong mo sakin babyy
+        I appreciate you so much po bab!
+        ILOVEYOUUSOMUCHHHH BABYY KOO MWA MWA KA SAKIN! 💗
+        </p>
+
+        <div class="signature">
+            Forever yours,<br>
+            Your Baby YURIE BULAWAN PO💕
+            here lang po ang message ko for you mwa mwaa
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function openLetter() {
+    document.getElementById("envelope").classList.add("hidden");
+    document.getElementById("openBtn").classList.add("hidden");
+    document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
